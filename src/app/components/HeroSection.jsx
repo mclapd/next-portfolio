@@ -39,11 +39,13 @@ export default function HeroSection() {
             it more) But still, I want it more, more, more.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
-              Hire me
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-300 text-white">
+              <span className="block bg-[#121212 hover:bg-slate-800 rounded-full px-5 py-1">
+                Hire me
+              </span>
             </button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212 hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-1">
                 Download CV
               </span>
             </button>
