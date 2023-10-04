@@ -1,13 +1,14 @@
 "use client";
-import React from "react";
-import dynamic from "next/dynamic";
 
-const AnimatedNumbers = dynamic(
-  () => {
-    return import("react-animated-numbers");
-  },
-  { ssr: false }
-);
+import React from "react";
+// import dynamic from "next/dynamic";
+
+// const AnimatedNumbers = dynamic(
+//   () => {
+//     return import("react-animated-numbers");
+//   },
+//   { ssr: false }
+// );
 
 const achievementsList = [
   {
@@ -29,6 +30,7 @@ const achievementsList = [
     value: "5",
   },
 ];
+
 export default function AchievementsSection() {
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -41,7 +43,8 @@ export default function AchievementsSection() {
             >
               <h2 className="text-white text-4xl font-bold flex flex-row">
                 {achievement.prefix}
-                <AnimatedNumbers
+                {achievement.value}
+                {/* <AnimatedNumbers
                   includeComma
                   animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
@@ -53,7 +56,7 @@ export default function AchievementsSection() {
                       tensions: 140 * (index + 1),
                     };
                   }}
-                />
+                /> */}
                 {achievement.postfix}
               </h2>
               <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
